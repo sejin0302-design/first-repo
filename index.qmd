@@ -14,5 +14,5 @@ library(tidyverse)
 
 storms |>
   ggplot() +
-  geom_bar(aes(x = category))
+  geom_bar(aes(x = category), color = "green")
 ```
