@@ -1,0 +1,20 @@
+---
+title: "Untitled"
+format: html
+editor: source
+embed-resources: true
+editor_options:
+  chunk_output_type: console
+---
+
+## My Visualization
+```{r}
+library(tidyverse)
+
+storms |>
+  ggplot() +
+  geom_bar(aes(x = category))
+
+
+
+```
