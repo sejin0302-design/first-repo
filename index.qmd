@@ -15,5 +15,4 @@ library(tidyverse)
 storms |>
   ggplot() +
   geom_bar(aes(x = category))
-
 ```
