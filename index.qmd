@@ -1,5 +1,6 @@
 ---
-title: "Untitled"
+title: "Storms Analysis"
+author: "Sejin Kim"
 format: html
 editor: source
 embed-resources: true
