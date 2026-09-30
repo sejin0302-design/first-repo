@@ -18,3 +18,27 @@ storms |>
   geom_bar(aes(x = category))
 
 ```
+
+
+
+## Big Question
+
+Count the number of observation for hurricanes with windspeeds above the 75th percentile for observations/hurricanes in that year
+
+```{r}
+library(tidyverse)
+
+glimpse(storms)
+
+storms |>
+  filter(status == "hurricane") |>
+  group_by(year) |>
+  mutate(threshold = quantile(wind, prob = 0.75)) |>
+  ungroup() |>
+  filter(wind > threshold) |>
+  count(year) |>
+  print(n = Inf)
+```
+
+
+
